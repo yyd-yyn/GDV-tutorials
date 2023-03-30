@@ -15,9 +15,9 @@ import operator
 cap = cv2.VideoCapture(0)
 
 # Get camera image parameters from get()
-width = int(cap.get(cv2.cv2.CAP_PROP_FRAME_WIDTH))
-height = int(cap.get(cv2.cv2.CAP_PROP_FRAME_HEIGHT))
-codec = int(cap.get(cv2.cv2.CAP_PROP_CODEC_PIXEL_FORMAT))
+width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+codec = int(cap.get(cv2.CAP_PROP_CODEC_PIXEL_FORMAT))
 
 print("Video properties:")
 print("  Width = " + str(width))
@@ -48,6 +48,9 @@ def circle_path(t, scale, offset):
 
 
 timer = 0.0
+
+# Display the image
+cv2.namedWindow("Video image")
 
 while True:
     # Capture the image

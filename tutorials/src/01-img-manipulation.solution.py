@@ -17,7 +17,7 @@ print(cv2.__version__)
 #                         grayscale image (codec internal conversion).
 # cv2.IMREAD_COLOR      - If set, always convert image to the 3 channel BGR
 #                         color image.
-img = cv2.imread("./exercises/data/images/logo.png", cv2.IMREAD_COLOR)
+img = cv2.imread("./tutorials/data/images/logo.png", cv2.IMREAD_COLOR)
 
 # Resize image with 'resize'
 new_width = 640

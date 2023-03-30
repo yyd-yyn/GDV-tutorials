@@ -88,6 +88,16 @@ def color_picker(event, x, y, flags, param):
         print("New color selected:", (hue, saturation, value))
 
 
+# Initialize windows
+title_orig_window = "Original image"
+cv2.namedWindow(title_orig_window)
+cv2.setMouseCallback(title_orig_window, color_picker)
+# Show the masked image in another window
+title_masked_window = "Masked image"
+cv2.namedWindow(title_masked_window)
+title_mask_window = "Mask image"
+cv2.namedWindow(title_mask_window)
+
 while True:
     # Get video frame (always BGR format!)
     ret, frame = cap.read()
@@ -121,17 +131,14 @@ while True:
         # Apply mask
         result = cv2.bitwise_and(img, img, mask=mask)
 
-        # Show the original image with drawings in one window
-        title = "Original image"
-        cv2.namedWindow(title)
-        cv2.setMouseCallback(title, color_picker)
-        cv2.imshow(title, img)
+        # Show the original image in one window
+        cv2.imshow(title_orig_window, img)
 
         # Show the masked image in another window
-        cv2.imshow("Masked image", result)
+        cv2.imshow(title_masked_window, result)
 
-        # Show the mask image in another window
-        cv2.imshow("Mask image", mask)
+        # show the mask image in another window
+        cv2.imshow(title_mask_window, mask)
 
         # Deal with keyboard input
         key = cv2.waitKey(10)
