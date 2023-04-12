@@ -50,7 +50,7 @@ def on_change(val):
 
 
 # Load example image as color image
-img = cv2.imread("./exercises/data/images/logo.png", cv2.IMREAD_COLOR)
+img = cv2.imread("./tutorials/data/images/logo.png", cv2.IMREAD_COLOR)
 img = cv2.resize(img, (400, 400))
 
 # Clone image

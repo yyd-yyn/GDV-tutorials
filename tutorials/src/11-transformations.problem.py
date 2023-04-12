@@ -7,7 +7,7 @@ import numpy as np
 import cv2
 
 # Load image and resize for better display
-img = cv2.imread("./exercises/data/images/nl_clown.jpg", cv2.IMREAD_COLOR)
+img = cv2.imread("./tutorials/data/images/nl_clown.jpg", cv2.IMREAD_COLOR)
 img = cv2.resize(img, (400, 400), interpolation=cv2.INTER_CUBIC)
 rows, cols, dims = img.shape
 

@@ -92,7 +92,7 @@ def on_change(val):
 
 
 # Load example image as color image
-img = cv2.imread("./exercises/data/images/blobtest.jpg", cv2.IMREAD_COLOR)
+img = cv2.imread("./tutorials/data/images/blobtest.jpg", cv2.IMREAD_COLOR)
 
 # Create a window with sliders and show resulting image
 window_name = "Blob detection demo"

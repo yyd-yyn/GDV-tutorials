@@ -34,7 +34,7 @@ def on_change(val):
 
 
 # Load example image as grayscale
-img = cv2.imread("./exercises/data/images/nl_clown.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("./tutorials/data/images/nl_clown.jpg", cv2.IMREAD_GRAYSCALE)
 
 # Resize if needed
 img = cv2.resize(img, (400, 400))

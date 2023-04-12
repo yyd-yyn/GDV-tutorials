@@ -11,7 +11,7 @@ import time
 import numpy as np
 
 # Load the COCO class names
-with open("./exercises/data/models/object_detection_classes_coco.txt", "r", encoding="utf-8") as f:
+with open("./tutorials/data/models/object_detection_classes_coco.txt", "r", encoding="utf-8") as f:
     class_names = f.read().split("\n")
 # DEBUG:
 print(class_names)
@@ -21,13 +21,13 @@ colors = np.random.uniform(0, 255, size=(len(class_names), 3))
 
 # Load the DNN model
 net = cv2.dnn.readNet(
-    model="./exercises/data/models/frozen_inference_graph_ssd.pb",
-    config="./exercises/data/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt",
+    model="./tutorials/data/models/frozen_inference_graph_ssd.pb",
+    config="./tutorials/data/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt",
     framework="TensorFlow",
 )
 
 # Capture the video
-cap = cv2.VideoCapture("./exercises/data/videos/objects_UH.MOV")
+cap = cv2.VideoCapture("./tutorials/data/videos/objects_UH.MOV")
 # cap = cv2.VideoCapture(0) # Uncomment to use the webcam
 
 # Get the video frames' width and height for proper saving of videos

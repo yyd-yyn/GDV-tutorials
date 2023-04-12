@@ -150,8 +150,8 @@ def run_test_on_folder(trainData, folder_name, k):
 def main():
     # Initialize the training set and load CIFAR-10 data
     trainData = TrainingSet()
-    trainData.loadCifar10("./exercises/data/cifar/cifar-10-batches-py/data_batch_1",
-                          "./exercises/data/cifar/cifar-10-batches-py/batches.meta")
+    trainData.loadCifar10("./tutorials/data/cifar/cifar-10-batches-py/data_batch_1",
+                          "./tutorials/data/cifar/cifar-10-batches-py/batches.meta")
 
     # Open a window for visual debugging
     cv2.namedWindow(window_title, cv2.WINDOW_GUI_NORMAL)
@@ -160,7 +160,7 @@ def main():
     trainData.testCifar(375)
 
     # Test a bunch of images and define an appropriate number of neighbours (k)
-    run_test_on_folder(trainData, "./exercises/data/cifar/", k=10)
+    run_test_on_folder(trainData, "./tutorials/data/cifar/", k=10)
 
 
 if __name__ == "__main__":

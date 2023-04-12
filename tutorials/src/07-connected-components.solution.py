@@ -19,7 +19,7 @@ lower_green = np.array([hue - hue_range, saturation - saturation_range, value - 
 upper_green = np.array([hue + hue_range, saturation + saturation_range, value + value_range])
 
 # Load image
-img = cv2.imread("./exercises/data/images/smarties02.JPG", cv2.IMREAD_COLOR)
+img = cv2.imread("./tutorials/data/images/smarties02.JPG", cv2.IMREAD_COLOR)
 img = cv2.resize(img, (800, 600))
 
 # Convert to HSV

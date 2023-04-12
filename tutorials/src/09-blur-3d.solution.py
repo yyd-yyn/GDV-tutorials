@@ -66,7 +66,7 @@ def show_kernel_3D(kernel, kernel_size, title):
 
 def main():
     # Load the image.
-    image_name = "./exercises/data/images/Bumbu_Rawon.jpg"
+    image_name = "./tutorials/data/images/Bumbu_Rawon.jpg"
     image = cv2.imread(image_name, cv2.IMREAD_GRAYSCALE)
     # image = cv2.resize(image, (320,213))
 

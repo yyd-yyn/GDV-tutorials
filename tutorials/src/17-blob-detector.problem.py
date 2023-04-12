@@ -48,7 +48,7 @@ import numpy as np
 # Call the detect, draw and show function
 
 # Load example image as color image
-img = cv2.imread("./exercises/data/images/blobtest.jpg", cv2.IMREAD_COLOR)
+img = cv2.imread("./tutorials/data/images/blobtest.jpg", cv2.IMREAD_COLOR)
 
 # TODO Create a window with sliders and show resulting image
 
