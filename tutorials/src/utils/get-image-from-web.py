@@ -1,4 +1,5 @@
-# hint about reading image data came from https://stackoverflow.com/questions/17170752/python-opencv-load-image-from-byte-string
+# hint about reading image data came from here:
+# https://stackoverflow.com/questions/17170752/python-opencv-load-image-from-byte-string
 
 import cv2
 import numpy as np
