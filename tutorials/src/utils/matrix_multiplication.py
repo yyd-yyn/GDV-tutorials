@@ -23,7 +23,7 @@ result = A * B
 print(result, end="\n\n")
 
 # load image
-img = cv2.imread('tutorials\data\images\Bumbu_Rawon.jpg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('tutorials/data/images/Bumbu_Rawon.jpg', cv2.IMREAD_GRAYSCALE)
 
 img_crop = img[3:8, 3:8]
 img5x5 = cv2.resize(img, (5, 5))
