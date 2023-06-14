@@ -5,23 +5,23 @@ This folder contains the source code files for the tutorials.
 ## List of tutorials
 
 ### Tutorial #1
-Load, resize and rotate an image. And display it to the screen.)
+Load, resize and rotate an image. And display it on the screen.
 
 ### Tutorial #2
 Direct pixel access and manipulation. Set some pixels to black, copy some part of the image to some other place, count the used colors in the image
 
 ### Tutorial #3
-Show camera video and mirror it.
+Showing the camera video and mirroring it.
 
 ### Tutorial #4
-Loading a video file and mirror it.
+Loading a video file and mirroring it.
 
 ### Tutorial #5
 Use the webcam image stream and draw something on it. Animate one of the drawings.
 
 ### Tutorial #6
 Playing around with colors. We convert some values from RGB to HSV and then find colored objects in the image and mask them out. Includes a color picker on double-click now. The RGB version is meant to demonstrate that this does **not** work in RGB color space.
-- [rgb example](tutorials\src\06-rgb-to-hsv.bad.py)
+- [RGB example](tutorials\src\06-rgb-to-hsv.bad.py)
 
 ### Tutorial #7
 Counting colored objects by finding connected components in the binary image. Modify the binary image to improve the results.
@@ -31,7 +31,7 @@ Demonstrating how to do template matching in OpenCV.
 
 ### Tutorial #9
 Demonstrating Gaussian blur filter with OpenCV. 
-- [complete code with 3D plot of the kernel using matplotlib](./GDV_tutorial_09_3Dplot.py)
+- [complete code with a 3D plot of the kernel using matplotlib](./GDV_tutorial_09_3Dplot.py)
   - Note that matplotlib and PyQT5 need to be installed as described [here](https://matplotlib.org/stable/users/installing.html)
 
 ### Tutorial #10
@@ -65,5 +65,8 @@ A demonstration of SIFT Detector and Descriptor for object recognition.
 A demonstration of object detection using a pre-trained deep neural network. Heavily based on https://learnopencv.com/deep-learning-with-opencvs-dnn-module-a-definitive-guide/
 
 ### Tutorial #20
-Image classification with k-nearest neighbor approach using the CIFAR-10 data. Code is similar to the one used in assignment #4 and hence a bit cluttered.
+Image classification with k-nearest neighbor approach using the CIFAR-10 data. The code is similar to the one used in assignment #4 and hence a bit cluttered.
+
+### Tutorial #21
+A more modern demonstration of object detection that also uses a pre-trained deep neural network. This example uses the [Ultralytics YoloV8 model] (https://docs.ultralytics.com/).
 

@@ -39,12 +39,15 @@ cv2.resizeWindow(window_object, cols_table, rows_table)
 cv2.imshow(window_table, img_table)
 
 print('Loading images done.')
+# wait until key pressed
 cv2.waitKey(0)
 
 # Do the feature detection with SIFT
 # TODO Create a SIFT detector for 500 features (see https://docs.opencv.org/4.6.0/d7/d60/classcv_1_1SIFT.html)
 
-# Detect features and compute descriptors in both images
+detector = 'tbd'
+
+# TODO Detect features and compute descriptors in both images with detectAndCompute
 keypoints_obj, descriptors_obj = 'tbd'
 keypoints_table, descriptors_table = 'tbd'
 

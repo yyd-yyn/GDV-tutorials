@@ -31,7 +31,7 @@ If you need to update your pip version use
 python -m pip install --upgrade pip
 ```
 
-## Getting started with Python
+## Getting Started with Python
 
 A great selection of useful resources are:
 
@@ -50,9 +50,9 @@ featured proprietary version `visual-studio-code-bin` ([Link][vsc-arch-bin]) fro
 
 - Python `ms-python.python`: Python support in VS Code ([Link][vsc-ext-python])
 - Pylance `ms-python.vscode-pylance`: Python language server ([Link][vsc-ext-pylance])
-- Python Image Preview `076923.python-image-preview`: You can quickly check your Python image data during debugging
+- Python Image Preview `076923.python-image-preview`: you can quickly check your Python image data during debugging
   ([Link][vsc-ext-img-preview])
-- Todo Tree `Gruntfuggly.todo-tree`: Provides an overview of all code lines marked with "TODO"
+- Todo Tree `Gruntfuggly.todo-tree`: provides an overview of all code lines marked with "TODO"
   ([Link][vsc-ext-todo-tree])
 
 ### Python VENVs
