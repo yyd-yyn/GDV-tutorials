@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# images and videos created by tutorials
+img_tutorial02.jpg
+
 # Cifar 10 data that needs to be downloaded manually
 data/cifar-10-batches-py/batches.meta
 data/cifar-10-batches-py/data_batch_1
@@ -145,8 +148,6 @@ tutorials/data/cifar/cifar-10-batches-py/data_batch_4
 tutorials/data/cifar/cifar-10-batches-py/data_batch_5
 tutorials/data/cifar/cifar-10-batches-py/readme.html
 tutorials/data/cifar/cifar-10-batches-py/test_batch
-tutorials/data/models/frozen_inference_graph_ssd.pb
-tutorials/data/models/object_detection_classes_coco.txt
-tutorials/data/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt
-img_tutorial02.jpg
-tutorials/data/models/yolov8n.pt
+
+# models need to be downloaded manually
+tutorials/data/models/
