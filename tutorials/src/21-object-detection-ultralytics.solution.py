@@ -3,7 +3,7 @@ import cv2
 from ultralytics import YOLO  # pip install ultralytics needed
 
 # load model (download before running from https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt)
-model = YOLO("./models/yolov8n.pt")
+model = YOLO("./tutorials/data/models/yolov8n.pt")
 
 # capture webcam image
 cap = cv2.VideoCapture(0)
