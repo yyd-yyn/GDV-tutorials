@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 # Initialize images
 # Load object image as color image
-img_object = cv2.imread('./data/images/sift_object01.jpg', cv2.IMREAD_COLOR)
+img_object = cv2.imread('./tutorials/data/images/sift_object01.jpg', cv2.IMREAD_COLOR)
 
 # Extract shape of the image
 rows_obj, cols_obj, dims_obj = img_object.shape
@@ -24,7 +24,7 @@ cv2.resizeWindow(window_object, cols_obj, rows_obj)
 cv2.imshow(window_object, img_object)
 
 # Load table image as color image
-img_table = cv2.imread('./data/images/sift_table01.jpg', cv2.IMREAD_COLOR)
+img_table = cv2.imread('./tutorials/data/images/sift_table01.jpg', cv2.IMREAD_COLOR)
 
 # Extract shape of the image
 rows_table, cols_table, dims_table = img_object.shape
