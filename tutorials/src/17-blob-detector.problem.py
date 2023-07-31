@@ -4,8 +4,8 @@
 # A demonstration of the OpenCV Simple Blob Detector. Adjust the parameters using sliders. The following OpenCV
 # functions are meant to be used in this tutorial:
 #
-# SimpleBlobDetector (with params) see https://docs.opencv.org/3.4/d0/d7a/classcv_1_1SimpleBlobDetector.html#details
-# drawKeypoints see https://docs.opencv.org/3.4/d4/d5d/group__features2d__draw.html#gab958f8900dd10f14316521c149a60433
+# SimpleBlobDetector (with params) see https://docs.opencv.org/4.x/d0/d7a/classcv_1_1SimpleBlobDetector.html#details
+# drawKeypoints see https://docs.opencv.org/4.x/d4/d5d/group__features2d__draw.html#gab958f8900dd10f14316521c149a60433
 
 import cv2
 import numpy as np

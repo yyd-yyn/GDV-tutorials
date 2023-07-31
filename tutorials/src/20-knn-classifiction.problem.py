@@ -117,7 +117,7 @@ def classify_knn(trainData, sample, k):
     """
 
     # TODO Implement knn classifier as explained here:
-    # https://docs.opencv.org/4.5.5/d5/d26/tutorial_py_knn_understanding.html
+    # https://docs.opencv.org/4.x/d5/d26/tutorial_py_knn_understanding.html
 
 
 def run_test_on_folder(trainData, folder_name, k):

@@ -43,7 +43,7 @@ print('Loading images done.')
 cv2.waitKey(0)
 
 # Do the feature detection with SIFT
-# TODO Create a SIFT detector for 500 features (see https://docs.opencv.org/4.6.0/d7/d60/classcv_1_1SIFT.html)
+# TODO Create a SIFT detector for 500 features (see https://docs.opencv.org/4.x/d7/d60/classcv_1_1SIFT.html)
 
 detector = 'tbd'
 
@@ -52,7 +52,7 @@ keypoints_obj, descriptors_obj = 'tbd'
 keypoints_table, descriptors_table = 'tbd'
 
 # TODO Draw detected feature points in both images and show them
-# See (https://docs.opencv.org/4.6.0/d4/d5d/group__features2d__draw.html)
+# See (https://docs.opencv.org/4.x/d4/d5d/group__features2d__draw.html)
 
 cv2.imshow(window_object, img_object)
 cv2.imshow(window_table, img_table)
@@ -62,7 +62,7 @@ cv2.waitKey(0)
 
 # Do the feature matching with a brute force matcher
 # TODO Initialize and run BFMatcher with default params
-# (see https://docs.opencv.org/4.6.0/d3/da1/classcv_1_1BFMatcher.html)
+# (see https://docs.opencv.org/4.x/d3/da1/classcv_1_1BFMatcher.html)
 matches = "TODO: Define this variable"
 
 # Store all the good matches as per Lowe's ratio test.
@@ -92,7 +92,7 @@ if len(good) > MIN_MATCH_COUNT:
     src_pts = np.float32([keypoints_obj[m[0].queryIdx].pt for m in good]).reshape(-1, 1, 2)
     dst_pts = np.float32([keypoints_table[m[0].trainIdx].pt for m in good]).reshape(-1, 1, 2)
     # TODO Find the homography with RANSAC
-    # (see https://docs.opencv.org/4.6.0/d9/d0c/group__calib3d.html#ga4abc2ece9fab9398f2e560d53c8c9780)
+    # (see https://docs.opencv.org/4.x/d9/d0c/group__calib3d.html#ga4abc2ece9fab9398f2e560d53c8c9780)
     M = "TODO: write the homography into this variable"
     print('\nTransformation matrix\n', '\n'.join(['\t'.join(['%03.3f' % cell for cell in row]) for row in M]))
     # TODO Draw the outline of the object into the table image

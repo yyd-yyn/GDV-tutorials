@@ -2,7 +2,7 @@
 # ------------
 #
 # Compute the Harris corner response image and detect isolated corners with non-maximum suppression. Inspired by
-# https://docs.opencv.org/4.5.3/dc/d0d/tutorial_py_features_harris.html
+# https://docs.opencv.org/4.x/dc/d0d/tutorial_py_features_harris.html
 
 import numpy as np
 import cv2

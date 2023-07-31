@@ -23,7 +23,7 @@ else:
     # TODO Read shape of the template and original image
 
     # TODO Define template matching methods,
-    # See https://docs.opencv.org/4.5.3/df/dfb/group__imgproc__object.html#ga3a7850640f1fe1f58fe91a2d7583695d for the
+    # See https://docs.opencv.org/4.x/df/dfb/group__imgproc__object.html#ga3a7850640f1fe1f58fe91a2d7583695d for the
     # math behind each method
 
     # TODO Loop over all methods in order to compare them

@@ -112,7 +112,7 @@ You can use https://docs.python.org/3/ as a starting point, and the Library Refe
 
 ### OpenCV reference
 
-See [https://docs.opencv.org/4.7.0/](https://docs.opencv.org/4.7.0/) for the OpenCV code reference. Here, all OpenCV methods are explained. If you want to know about parameters and flags, this is the page to look them up.
+See [https://docs.opencv.org/4.x/](https://docs.opencv.org/4.x/) for the OpenCV code reference. Here, all OpenCV methods are explained. If you want to know about parameters and flags, this is the page to look them up.
 
 ### NumPy
 
