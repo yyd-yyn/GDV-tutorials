@@ -151,3 +151,9 @@ tutorials/data/cifar/cifar-10-batches-py/test_batch
 
 # models need to be downloaded manually
 tutorials/data/models/
+tutorials/data/myimages/
+tutorials/data/bird-or-forest-1/
+tutorials/data/bird-or-forest-2/
+
+# training runs
+tutorials/data/runs/
