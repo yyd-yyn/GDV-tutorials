@@ -36,16 +36,10 @@ def grab_training_images(image_types, image_count, save_path="tutorials/data/myi
         grab_more_images(image_type, image_count, save_path + image_type + "/")
 
 
-# images = grab_training_images(["bird", "forest"], 20)
-
+# If you want to use a detection model instead, do the following:
 # TODO follow roboflow tutorial (https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data - Chapter 1.2 & 1.3)
 # to create dataset and download it
-
-
-def download_dataset(key, workspace, project_name, version, format):
-    rf = Roboflow(api_key=key)
-    project = rf.workspace(workspace).project(project_name)
-    project.version(version).download(format)
+# you also have to use an appropriate yolo model (e.g. yolov5s).
 
 
 # TODO train model
@@ -54,9 +48,6 @@ def train_model(data_path, _epochs):
     model = YOLO("./tutorials/data/models/yolov8n-cls.pt")
     results = model.train(data=data_path, epochs=_epochs)
     return results
-
-
-# results = train_model('./tutorials/data/bird-or-forest-2/data.yaml', 10)
 
 
 # TODO Test your new model
@@ -74,8 +65,6 @@ def test_model(model_path):
     cv2.imshow("result", img)
     return results
 
-
-# test_model("./tutorials/data/runs/detect/train2/weights/best.pt")
 
 # TODO Create interactive application to choose between steps
 while True:
