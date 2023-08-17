@@ -3,7 +3,6 @@ import cv2
 import requests
 import html
 from ultralytics import YOLO  # pip install ultralytics needed
-from roboflow import Roboflow
 
 
 # TODO Implement image retrieval from web
