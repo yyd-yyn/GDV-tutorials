@@ -4,7 +4,6 @@ import requests
 import html
 from ultralytics import YOLO  # pip install ultralytics needed
 from roboflow import Roboflow
-import os
 
 
 # TODO Implement image retrieval from web
