@@ -22,18 +22,14 @@ def grab_image(query, show_image, save_image=False, save_path="tutorials/data/my
 
 # TODO retrieve multiple images
 def grab_more_images(query, image_count, save_path="tutorials/data/myimages/"):
-    images = []
     for i in range(image_count):
-        images.append(grab_image('/1280x720/?' + query, False, True, save_path, "{0}_{1}.jpg".format(query, i)))
-    return images
+        grab_image('/1280x720/?' + query, False, True, save_path, "{0}_{1}.jpg".format(query, i))
 
 
 # TODO retrieve images for training
 def grab_training_images(image_types, image_count, save_path="tutorials/data/myimages/"):
-    images = []
     for image_type in image_types:
-        images.append(grab_more_images(image_type, image_count, save_path + image_type + "/"))
-    return images
+        grab_more_images(image_type, image_count, save_path + image_type + "/")
 
 
 # images = grab_training_images(["bird", "forest"], 20)
@@ -45,14 +41,11 @@ def grab_training_images(image_types, image_count, save_path="tutorials/data/myi
 def download_dataset(key, workspace, project_name, version, format):
     rf = Roboflow(api_key=key)
     project = rf.workspace(workspace).project(project_name)
-    dataset = project.version(version).download(format)
-    return dataset
-
-
-# download_dataset("UgfrdbqnWJsvblKXzK6f", "hfu", "bird-or-forest", 2, "yolov5")
+    project.version(version).download(format)
 
 
 # TODO train model
+# base model needs to be downloaded first
 def train_model(data_path, _epochs):
     model = YOLO("./tutorials/data/models/yolov5su.pt")
     results = model.train(data=data_path, epochs=_epochs)
@@ -91,8 +84,53 @@ def test_model(model_path):
             cv2.putText(img, str(score), (x1, y1 + 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
     # show image with bounding boxes
     cv2.imshow("result", img)
-    cv2.waitKey(0)
     return results
 
 
-test_model("./tutorials/data/runs/detect/train2/weights/best.pt")
+# test_model("./tutorials/data/runs/detect/train2/weights/best.pt")
+
+# TODO Create interactive application to choose between steps
+while True:
+    # present options
+    print("press q to quit")
+    print("press 1 to grab images")
+    print("press 2 to download dataset")
+    print("press 3 to train model")
+    print("press 4 to test model")
+    cv2.namedWindow("result", cv2.WINDOW_NORMAL)
+    key = cv2.waitKey(0)
+    # press q to close the window
+    if key == ord('q'):
+        break
+    # press 1 to grab image
+    if key == ord('1'):
+        image_descriptors = ["bird", "forest"]
+        # ask for image count
+        image_count = (int)(input("input the number of images you want to download: "))
+        # set save path
+        save_path = "tutorials/data/myimages/"
+        grab_training_images(image_descriptors, image_count, save_path)
+        break
+    # press 2 to download dataset
+    if key == ord('2'):
+        key = input("input your roboflow api key: ")
+        workspace = input("input your roboflow workspace: ")
+        project_name = input("input your roboflow project name: ")
+        version = (int)(input("input the version of your roboflow project: "))
+        format = input("input the format of your roboflow project: ")
+        download_dataset(key, workspace, project_name, version, format)
+        break
+    # press 3 to train model
+    if key == ord('3'):
+        data_path = "./tutorials/data/bird-or-forest-2/data.yaml"
+        epochs = (int)(input("input the number of epochs: "))
+        train_model(data_path, epochs)
+        break
+    # press 4 to test model
+    if key == ord('4'):
+        model_path = "./tutorials/data/runs/detect/train2/weights/best.pt"
+        while True:
+            test_model(model_path)
+            if cv2.waitKey(0) == ord('q'):
+                break
+        break
