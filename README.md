@@ -55,9 +55,9 @@ featured proprietary version `visual-studio-code-bin` ([Link][vsc-arch-bin]) fro
 - Todo Tree `Gruntfuggly.todo-tree`: provides an overview of all code lines marked with "TODO"
   ([Link][vsc-ext-todo-tree])
 
-### Python VENVs
+### Python Virtual Environments
 
-To more easily develop Python code, it is recommended to set up a VENV (virtual environment) in the project root folder.
+To more easily develop Python code, it is recommended to set up a virtual environment (VENV) in the project root folder.
 The following terminal command will create the hidden folder `.venv` in your current project folder:
 
 ```shell
@@ -97,7 +97,7 @@ This will load the defined dependencies in `pyproject.toml` and install them ins
 
 ## Happy coding!
 
-Now you are ready to start working on the exercises. The `tutorials/src` folder contains all code. The idea is to start with the
+Now you are ready to start working on the exercises. The `tutorials/src` folder contains all the code. The idea is to start with the
 `<XX>-<NAME>.problem.py` files and try to fulfill the TODOs. These "problem" files will guide you in the right
 direction. You can ask for help during the lecture if there are any questions. Next, the `<XX>-<NAME>.solution.py` files
 contain the solution. After you implement your solution, use this file to compare and add some improvements to your

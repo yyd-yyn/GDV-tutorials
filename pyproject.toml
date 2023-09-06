@@ -1,13 +1,14 @@
 [project]
-name        = "tutorials-SoSe23"
-version     = "0.0.2"
+name        = "tutorials-GDV"
+version     = "0.0.3"
 description = "Grafische Datenverarbeitung an der HFU"
 readme      = "README.md"
 authors     = [
   { name = "Uwe Hahne", email = "uwe.hahne@hs-furtwangen.de" },
   { name = "Techassi", email = "git@techassi.dev" }
+  { name = "Fabian Mieg", email = "fabian.alexander.mieg@hs-furtwangen.de" }
 ]
-keywords    = ["opencv", "computer", "vision"]
+keywords    = ["opencv", "computer vision", "visual computing", "teaching"]
 requires-python = ">=3.9.0"
 dependencies    = [
   "click>=8.1.3",
