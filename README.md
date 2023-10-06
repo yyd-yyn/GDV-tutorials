@@ -8,10 +8,33 @@ that all content here is tentative and will be adapted to the student's needs du
 First, we need to download and install Python 3 from [python.org](https://www.python.org/downloads/). The recommended
 version is `3.10.7` or above. Then, we can use the following terminal command to inspect the currently installed
 version:
+<table>
+<tr>
+<th>
+Windows
+</th>
+<th>
+MacOS
+</th>
+</tr>
 
-```shell
+<tr>
+
+<td>
+<pre>
 python --version
-```
+</pre>
+</td>
+
+<td>
+<pre>
+python3 --version
+</pre>
+</td>
+
+</tr>
+</table>
+
 
 *Ensure that the terminal and selected interpreter use the correct version.*
 
@@ -21,15 +44,41 @@ Usually, the Python installation includes the dependency management tool pip out
 install it from [pip.pypa.io](https://pip.pypa.io/en/stable/installation/). The minimum required version is `19.3` and
 above. We can again use a terminal command to check the version:
 
-```shell
-pip --version
-```
+<table>
+<tr>
+<th>
+Windows
+</th>
+<th>
+MacOS
+</th>
+</tr>
 
-If you need to update your pip version use
+<tr>
+
+<td>
+<pre>
+pip --version
+</pre>
+</td>
+
+<td>
+<pre>
+python3 -m pip --version
+</pre>
+</td>
+
+</tr>
+</table>
+
+
+If you need to update your pip version use 
 
 ```shell
 python -m pip install --upgrade pip
 ```
+*Do not forget to use ```python3``` instead of ```python``` on MacOS.*
+
 
 ## Getting Started with Python
 
@@ -64,8 +113,9 @@ The following terminal command will create the hidden folder `.venv` in your cur
 python -m venv .venv
 ```
 
-Next, we need to enable the VENV. The VENV will only be active for the current terminal session. Closing the terminal
-and re-opening it will disable the VENV. So always make sure to enable it before you start developing.
+*Do not forget to use ```python3``` instead of ```python``` on MacOS.*
+
+Next, we need to enable the VENV. The VENV will only be active for the current terminal session. Closing the terminal and re-opening it will disable the VENV. So always make sure to enable it before you start developing.
 
 ```shell
 # For Windows use
@@ -75,7 +125,7 @@ and re-opening it will disable the VENV. So always make sure to enable it before
 source .venv/bin/activate
 ```
 
-Special care is needed when using Windows. Please consult the following [guide][venv-guide] for more information.
+Special care is needed when using Windows. Please consult the following [guide][venv-guide] for more information. When the environment is activated, you should see this as a prefix on your terminal.
 
 ---
 
@@ -93,7 +143,13 @@ Installing the required dependencies is straightforward:
 pip install .
 ```
 
-This will load the defined dependencies in `pyproject.toml` and install them inside the VENV.
+This will load the defined dependencies in `pyproject.toml` and install them inside the VENV. Note that this sums up to more than one Gigabyte of data as some machine learning modules are included (e.g. torch).
+
+If you do not want to install all at once. Start with
+
+```shell
+pip install opencv-python
+```
 
 ## Happy coding!
 
@@ -107,7 +163,7 @@ code.
 
 ### Python
 
-You can use https://docs.python.org/3/ as a starting point, and the Library Reference][py-lib-ref] or the
+You can use https://docs.python.org/3/ as a starting point, and the [Library Reference][py-lib-ref] or the
 [Language Reference][py-lang-ref] should contain all the needed information.
 
 ### OpenCV reference

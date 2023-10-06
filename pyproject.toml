@@ -4,8 +4,8 @@ version     = "0.0.3"
 description = "Grafische Datenverarbeitung an der HFU"
 readme      = "README.md"
 authors     = [
-  { name = "Uwe Hahne", email = "uwe.hahne@hs-furtwangen.de" },
-  { name = "Techassi", email = "git@techassi.dev" }
+  { name = "Uwe Hahne", email = "uwe.hahne@hfu.eu" },
+  { name = "Techassi", email = "git@techassi.dev" },
   { name = "Fabian Mieg", email = "fabian.alexander.mieg@hs-furtwangen.de" }
 ]
 keywords    = ["opencv", "computer vision", "visual computing", "teaching"]
