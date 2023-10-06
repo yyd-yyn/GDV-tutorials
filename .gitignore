@@ -128,26 +128,15 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# images and videos created by tutorials
-img_tutorial02.jpg
+# VS Code
+.vscode/
 
-# Cifar 10 data that needs to be downloaded manually
-data/cifar-10-batches-py/batches.meta
-data/cifar-10-batches-py/data_batch_1
-data/cifar-10-batches-py/data_batch_2
-data/cifar-10-batches-py/data_batch_3
-data/cifar-10-batches-py/data_batch_4
-data/cifar-10-batches-py/data_batch_5
-data/cifar-10-batches-py/readme.html
-data/cifar-10-batches-py/test_batch
-tutorials/data/cifar/cifar-10-batches-py/batches.meta
-tutorials/data/cifar/cifar-10-batches-py/data_batch_1
-tutorials/data/cifar/cifar-10-batches-py/data_batch_2
-tutorials/data/cifar/cifar-10-batches-py/data_batch_3
-tutorials/data/cifar/cifar-10-batches-py/data_batch_4
-tutorials/data/cifar/cifar-10-batches-py/data_batch_5
-tutorials/data/cifar/cifar-10-batches-py/readme.html
-tutorials/data/cifar/cifar-10-batches-py/test_batch
+# images and videos created by tutorials
+*.jpg
 
 # models need to be downloaded manually
 tutorials/data/models/
+tutorials/data/myimages/
+
+# training runs from ultralytics
+runs/
