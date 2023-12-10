@@ -65,6 +65,9 @@ def on_change(val):
         params.filterByCircularity = True
     else:
         params.filterByCircularity = False
+        filter_circularity_val = 0.1 # OpenCV does not allow 0.0
+
+    print(filter_circularity_val / 100.0)
 
     params.minCircularity = filter_circularity_val / 100.0
 
@@ -75,6 +78,7 @@ def on_change(val):
         params.filterByConvexity = True
     else:
         params.filterByConvexity = False
+        filter_convexity_val = 0.1 # OpenCV does not allow 0.0
 
     params.minConvexity = filter_convexity_val / 100.0
 
@@ -85,6 +89,7 @@ def on_change(val):
         params.filterByInertia = True
     else:
         params.filterByInertia = False
+        filter_inertia_val = 0.1 # OpenCV does not allow 0.0
 
     params.minInertiaRatio = filter_inertia_val / 100.0
 
