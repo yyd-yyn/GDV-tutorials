@@ -143,12 +143,12 @@ Installing the required dependencies is straightforward:
 pip install .
 ```
 
-This will load the defined dependencies in `pyproject.toml` and install them inside the VENV. Note that this sums up to more than one Gigabyte of data as some machine learning modules are included (e.g. torch).
+This will load the defined dependencies in `pyproject.toml` and install them inside the VENV. Note that the ultralytics module needed for the last tutorials is excluded, as this sums up to more than one Gigabyte of data as some machine learning modules are included (e.g. torch).
 
-If you do not want to install all at once. Start with
+If you want to install it later use:
 
 ```shell
-pip install opencv-python
+pip install ultralytics
 ```
 
 ## Happy coding!
