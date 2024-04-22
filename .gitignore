@@ -140,3 +140,7 @@ tutorials/data/myimages/
 
 # training runs from ultralytics
 runs/
+
+# macos image folders
+.DS_Store
+**/.DS_Store
