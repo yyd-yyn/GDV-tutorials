@@ -15,8 +15,12 @@ saturation = 155
 saturation_range = 100
 value = 155
 value_range = 100
-lower_green = np.array([hue - hue_range, saturation - saturation_range, value - value_range])
-upper_green = np.array([hue + hue_range, saturation + saturation_range, value + value_range])
+lower_green = np.array(
+    [hue - hue_range, saturation - saturation_range, value - value_range]
+)
+upper_green = np.array(
+    [hue + hue_range, saturation + saturation_range, value + value_range]
+)
 
 # Load image
 img = cv2.imread("./tutorials/data/images/smarties01.JPG", cv2.IMREAD_COLOR)
@@ -28,11 +32,12 @@ hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 # Create a mask
 mask = cv2.inRange(hsv, lower_green, upper_green)
 
-# TODO Morphological operations code
+# TODO Modify the mask image with dilation or erosion 
+# in order to avoid very small connected components
 
 # TODO Find connected components
 
-# TODO Go through all (reasonable) found connected components
+# TODO Loop over all (reasonable) found connected components
 
 # TODO (Optional) check size and roundness as plausibility
 
@@ -40,13 +45,13 @@ mask = cv2.inRange(hsv, lower_green, upper_green)
 
 # TODO Find and draw bounding box
 
-# Print out number of connected components
+# TODO end loop here
+
+# TODO Print out number of connected components
 print("We have found x green smarties.")
 
 # Show the original image with drawings in one window
 cv2.imshow("Original image", img)
-
-# Show the masked image in another window
 
 # Show the mask image in another window
 cv2.imshow("Mask image", mask)
