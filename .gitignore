@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # VS Code
-.vscode/
+.vscode/settings.json
 
 # images and videos created by tutorials
 *.jpg
@@ -155,5 +155,6 @@ tutorials/src/tmp-blending.py
 tutorials/src/tmp-pyramid.py
 tutorials/src/utils/download_images.py
 tutorials/src/utils/launch_fiftyone.py
-sandbox/draw.py
-sandbox/outline.py
+sandbox/
+bird_or_not/
+cat_or_not/

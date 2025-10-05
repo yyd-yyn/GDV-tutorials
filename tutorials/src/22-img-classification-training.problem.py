@@ -23,7 +23,7 @@ def test_model(image_descriptors, model_path):
     model = YOLO(model_path)
     index = 0
     for image_type in image_descriptors:
-        query = image_type  # change to 1 for other category
+        query = image_type  # change for other category
         #TODO: find your own test images and adjust path
         img = cv2.imread(query+".jpg", cv2.IMREAD_COLOR)
 

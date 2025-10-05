@@ -1,3 +1,6 @@
+# This is a helper tool to download images from the web based on search queries. 
+# As search engines change their API in order to avoid such tools to be used in 
+# large scale, there is no guarantee that this code still works.
 # hint about reading image data came from here:
 # https://stackoverflow.com/questions/17170752/python-opencv-load-image-from-byte-string
 
@@ -10,16 +13,16 @@ from fastdownload import download_url
 
 ddgs = DDGS()
 max_images = 30
-dest = 'temp.jpg'
+dest = "temp.jpg"
 
 
 # grab some image from the web and optionally save it
 def grab_image(query, save_image=False, filename="image.jpg"):
     # using DDG
-    urls = L(ddgs.images(keywords=query, max_results=max_images)).itemgot('image')
-    #response = requests.get("https://source.unsplash.com/random{0}".format(html.escape(query)))
+    urls = L(ddgs.images(keywords=query, max_results=max_images)).itemgot("image")
+    # response = requests.get("https://source.unsplash.com/random{0}".format(html.escape(query)))
     # TODO: Check if url ends with jpg
-    print("Downloading image:",urls[0])
+    print("Downloading image:", urls[0])
     input("Press Enter to continue...")
     download_url(urls[0], dest, show_progress=True)
     img = cv2.imread(dest, cv2.IMREAD_COLOR)

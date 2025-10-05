@@ -1,3 +1,5 @@
+# This script illustrates the various ways to perform matrix multiplication using NumPy.
+
 import numpy as np
 import cv2
 
