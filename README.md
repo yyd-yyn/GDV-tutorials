@@ -3,6 +3,11 @@
 This repository contains exercises for the course "Grafische Datenverarbeitung" at HS Furtwangen University. Please note
 that all content here is tentative and will be adapted to the student's needs during the semester.
 
+## Forking the repository
+
+To work on the exercises, you need to fork this repository to your GitHub account and clone it to your local machine. You can find a guide on how to do
+this [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo). It is recommended to configure git to sync your forked repository with the original one as explained in the [guide further down the page](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#configuring-git-to-sync-your-fork-with-the-upstream-repository).
+
 ## Prerequisites
 
 First, we need to download and install Python 3 from [python.org](https://www.python.org/downloads/). The recommended
