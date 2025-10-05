@@ -19,11 +19,15 @@ print(cv2.__version__)
 #                         color image.
 img = cv2.imread("./tutorials/data/images/logo.png", cv2.IMREAD_COLOR)
 
+# Check if image is loaded fine and raise a FileNotFoundError if not
+if img is None:
+	raise FileNotFoundError("Image not found or failed to load.")
+
 # Resize image with 'resize'
 new_width = 640
 new_height = 480
 new_size = (new_width, new_height)
-img = cv2.resize(img, new_size)
+img = cv2.resize(img, new_size)  # type: ignore
 
 # Rotate image (but keep it rectangular) with 'rotate'
 img = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)

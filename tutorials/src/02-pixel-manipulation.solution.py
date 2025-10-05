@@ -11,6 +11,12 @@ import numpy as np
 img_gray = cv2.imread("./tutorials/data/images/logo.png", cv2.IMREAD_GRAYSCALE)
 img_color = cv2.imread("./tutorials/data/images/logo.png", cv2.IMREAD_COLOR)
 
+# Check if images have been loaded successfully
+if img_gray is None:
+    raise FileNotFoundError("Image not found or failed to load.")
+if img_color is None:
+    raise FileNotFoundError("Image not found or failed to load.")
+
 # Do some print out about the loaded data
 print(type(img_gray))  # Prints class numpy.ndarray
 print(type(img_color))  # Prints class numpy.ndarray
@@ -32,7 +38,7 @@ print("height = " + str(img.shape[0]))
 print("width = " + str(img.shape[1]))
 print("last dimension = " + str(last_dim))
 
-# Resize image
+# Resize image to a small size (7x5)
 new_width = 7
 new_height = 5
 new_size = (new_width, new_height)
@@ -47,6 +53,7 @@ print(img[:, 0])
 
 # Continue with the color image
 img = img_color.copy()
+
 
 # Set area of the image to black
 for i in range(30):

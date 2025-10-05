@@ -6,18 +6,5 @@
 import numpy as np
 import cv2
 
-# TODO Open a video file
-
-# TODO Get camera image parameters from get()
-
-# TODO Start a loop
-
-# TODO (In loop) read one video frame
-
-# TODO (In loop) create four tiles of the image
-
-# TODO (In loop) show the image
-
-# TODO (In loop) close the window and stop the loop if 'q' is pressed
-
-# TODO Release the video and close all windows
+# TODO Just copy the code from exercise 3 and modify it to load a video file instead of the camera.
+# Use the file "tutorials/data/videos/hello_UH.m4v" as input for the 'VideoCapture' function.

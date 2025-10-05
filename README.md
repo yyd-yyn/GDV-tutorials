@@ -77,8 +77,8 @@ If you need to update your pip version use
 ```shell
 python -m pip install --upgrade pip
 ```
-*Do not forget to use ```python3``` instead of ```python``` on MacOS.*
 
+*You might need to use ```python3``` instead of ```python``` on MacOS.*
 
 ## Getting Started with Python
 
