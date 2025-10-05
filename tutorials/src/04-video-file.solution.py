@@ -19,6 +19,12 @@ print("  Width = " + str(width))
 print("  Height = " + str(height))
 print("  Frame count = " + str(count))
 
+# Create a window for the video
+title = "Video image"
+# Note that window parameters have no effect on MacOS
+cv2.namedWindow(title, cv2.WINDOW_FREERATIO)
+print("Press q to close the window.")
+
 # Start a loop
 while True:
     # Read one video frame
@@ -37,7 +43,7 @@ while True:
         img[:height // 2, width // 2:] = cv2.flip(smaller_frame, 1)
 
         # Show the image
-        cv2.imshow("Video image", img)
+        cv2.imshow(title, img)
 
         # Close the window and stop the loop if 'q' is pressed
         if cv2.waitKey(10) == ord("q"):
