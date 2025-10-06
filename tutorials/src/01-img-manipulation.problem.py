@@ -24,8 +24,10 @@ if img is None:
     raise FileNotFoundError("image file not found")
 
 # TODO Resize image with 'resize'.
+img = cv2.resize(img, None, fx = 2, fy = 2)
 
 # TODO Rotate image (but keep it rectangular) with 'rotate'.
+img = cv2.rotate(img,cv2.ROTATE_90_CLOCKWISE)
 
 # TODO Save image with 'imwrite'.
 cv2.imwrite("output.jpg", img)
